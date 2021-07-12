@@ -1,0 +1,140 @@
+$main: #0561a6;
+$pri: #1fc157;
+$sec: #095b55;
+$btn: #13b7ab;
+// $bgColor: #f3f3f3;
+$bgColor: rgba(#eaf5ff, 1);
+$light: #ffffff;
+$dark: #000000;
+
+@media only screen and (max-width: 990px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .banner-title {
+    font-size: 30px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light;
+    padding: 0 25px;
+
+    .nav {
+      position: fixed;
+      left: -200px;
+      transition: 0.4s;
+      z-index: -1;
+      pointer-events: none;
+
+      &.side-nav {
+        display: block;
+        position: fixed;
+        left: 10px;
+        top: 70px;
+        z-index: 21;
+        max-width: 370px;
+        width: 100%;
+        pointer-events: auto;
+
+        ul {
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 0 2rem;
+          width: 100%;
+          a {
+            margin-right: 2rem;
+            line-height: 5rem;
+            font-weight: 500;
+            font-size: 18px;
+            border-bottom: 1px solid rgba($light, 0.4);
+            width: 100%;
+
+            li {
+              color: $light;
+            }
+
+            &:hover {
+              background-color: rgba($light, 0.2);
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      height: 60px;
+      justify-content: flex-start;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .side-nav-btn {
+      display: block;
+      justify-content: flex-end;
+      position: relative;
+      height: 20px;
+      width: 30px;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 2px;
+        width: 100%;
+        background-color: $main;
+        transition: 0.4s;
+      }
+
+      .nav-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 2px;
+        width: 100%;
+        background-color: $main;
+        transition: 0.4s;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 2px;
+        width: 100%;
+        background-color: $main;
+        transition: 0.4s;
+      }
+
+      &.nav-clicked {
+        &:after {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+          width: 100%;
+        }
+
+        .nav-btn {
+          width: 0;
+        }
+
+        &:before {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
