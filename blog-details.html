@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main/main.styles.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive/responsive.styles.css" />
+
+    <!-- swiper-css -->
+    <link rel="stylesheet" href="./css/others/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/nav.js" defer></script>
+  </head>
+  <body>
+    <!-- header-start -->
+    <div class="side-nav-bg"></div>
+    <div class="close-btn-bg"></div>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="./images/logo/output-onlinepngtools.png" alt="logo" />
+        </div>
+        <div class="nav">
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="career.html"><li>Career</li></a>
+            <a href="product.html"><li>Product</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+          </ul>
+        </div>
+        <div class="side-nav-btn">
+          <div class="nav-btn"></div>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="page-banner">
+      <div class="wrapper">
+        <div class="detais">
+          <div class="page-name">Blog</div>
+          <div class="banner-title">
+            Our mission is to make AI trustworthy for all enterprises.
+          </div>
+        </div>
+        <div
+          class="image"
+          style="background-image: url(./images/teams.png)"
+        ></div>
+      </div>
+    </div>
+
+    <div class="blog-details-page">
+      <div class="wrapper">
+        <div class="blog-post">
+          <div class="image">
+            <div
+              class="img"
+              style="background-image: url(./images/research.jpeg)"
+            ></div>
+          </div>
+          <div class="details">
+            <div class="name">
+              Responsible AI Podcast with Scott Zoldi — “It’s time for AI to
+              grow up”
+            </div>
+            <div class="profile">
+              <div
+                class="profile-img"
+                style="background-image: url(./images/profile/profile1.jpeg)"
+              ></div>
+              <div class="profile-detaile">
+                <div class="username">Anusha</div>
+                <div class="time">July 8, 2021</div>
+              </div>
+            </div>
+            <p class="desc">
+              You could say Scott Zoldi knows a thing or two about Responsible
+              AI. As Chief Analytics Officer at FICO, a company that powers
+              billions of AI-driven decisions in production, Scott has authored
+              over 100 patents in areas like ethics, interpretability, and
+              explainability. One of his most recent projects, a new industry
+              report on Responsible AI, found that:
+            </p>
+          </div>
+
+          <div class="others-infos">
+            <div class="name">What is responsible AI?</div>
+            <div class="desc">
+              Scott identified four major components of Responsible AI:
+            </div>
+
+            <ul>
+              <li>
+                <strong>Robust AI:</strong> Understanding the data deeply, doing
+                stability testing, predicting causes of data drift, and
+                anticipating how the model might be used differently from its
+                original use intent.
+              </li>
+              <li>
+                <strong>Explainable AI:</strong> Knowing what’s driving the
+                model, both while developing it and at prediction time, in order
+                to create helpful, actionable explanations for end-users.
+              </li>
+              <li>
+                <strong>Ethical AI:</strong> Making a concerted effort to remove
+                bias from your models: in your data and in your model’s learned
+                features.
+              </li>
+              <li>
+                <strong>Auditable AI:</strong> Efficiently and proactively
+                monitoring your models.
+              </li>
+            </ul>
+          </div>
+
+          <div class="others-infos">
+            <div class="name">
+              The challenges of implementing Responsible AI
+            </div>
+            <div class="desc">
+              One challenge of implementing Responsible AI is the complexity of
+              ML systems. “We surveyed 100 Chief Analytics Officers and Chief AI
+              Officers and Chief Data Officers and about 65% said they can’t
+              explain how their model behaves,” Scott said. This is an education
+              problem, but it’s also due to companies using overly complicated
+              models because they feel pressured to have the latest technology.
+
+              <br />
+              <br />
+              Another challenge is the lack of monitoring. “Only 20% of these
+              CIOs and Chief AI Officers are monitoring models for performance
+              and ethics,” Scott said. This is due to multiple factors: Lack of
+              tooling, lack of investment and company culture around Responsible
+              AI, and lack of model explainability to know what to monitor.
+            </div>
+          </div>
+
+          <div class="others-infos">
+            <div class="name">Strategies for implementing Responsible AI</div>
+            <div class="desc">
+              Practitioners should be thinking about explainability long before
+              models go into production. “My focus is really on ensuring that
+              when we develop models, we can understand what drives these
+              models, in particular latent features,” Scott said. This lets
+              teams design models that avoid exposing protected classes to bias,
+              and constrain models so their behavior is easier for humans to
+              understand.
+
+              <br />
+              <br />
+              When models are in production, Scott explained, teams should know
+              the metrics associated with their most important features in order
+              to see how they’re shifting over time. Monitoring sub-slices or
+              segments of the data is also essential in order to find outliers.
+              And teams should set informed thresholds to know when to raise an
+              alarm about data drift.
+
+              <br />
+              <br />
+              Lastly, responsible AI can mean starting with a model design
+              that’s simpler. Complex models are harder to explain, and are more
+              prone to degradation as data drifts over time.
+            </div>
+          </div>
+
+          <div class="others-infos">
+            <div class="name">
+              3 things teams can do to prepare for the future of AI
+            </div>
+            <div class="desc">
+              Here’s what Scott believes organizations should do going forward:
+            </div>
+
+            <ul>
+              <li>
+                <strong
+                  >Recognize that a model development standard, set at the
+                  company level, is essential.
+                </strong>
+              </li>
+              <li>
+                <strong>Explainable AI:</strong> Knowing what’s driving the
+                model, both while developing it and at prediction time, in order
+                to create helpful, actionable explanations for end-users.
+              </li>
+              <li>
+                <strong>Commit to enforcing that standard.</strong> Document
+                your success criteria and your progress so that everyone can see
+                where the team is at. Scott’s doing research into model
+                development governance based on blockchain, so when someone
+                signs off on a model, their name goes into a permanent open
+                record.
+              </li>
+              <li>
+                <strong
+                  >Focus on production and how models can provide business
+                  value.</strong
+                >
+                This might require a mindset shift for data scientists. “If
+                you’re in an organization where you’re building the model, you
+                need to see yourself as part of the success of the production
+                environment,” Scott said.
+              </li>
+            </ul>
+
+            <div class="desc">
+              To ensure organizations act responsibly when their models affect
+              customers, it’s important for AI systems to be thoughtfully
+              designed and monitored. Fiddler is an end-to-end monitoring and
+              explainability platform that helps teams build trust with AI. You
+              can learn more and sign up for a free trial of Fiddler here.
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-post">
+          <div class="title">Recent Post</div>
+          <div class="list">
+            <div class="item">
+              <div class="recent-image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/solution.jpeg)"
+                ></div>
+              </div>
+              <div class="name">
+                <a href="#">
+                  Responsible AI Podcast with Scott Zoldi — “It’s time for AI to
+                  grow up”
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="recent-image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/teams.png)"
+                ></div>
+              </div>
+              <div class="name">
+                <a href="#">
+                  Responsible AI Podcast with Scott Zoldi — “It’s time for AI to
+                  grow up”
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="recent-image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/research.jpeg)"
+                ></div>
+              </div>
+              <div class="name">
+                <a href="#">
+                  Responsible AI Podcast with Scott Zoldi — “It’s time for AI to
+                  grow up”
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="recent-image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/developer.jpeg)"
+                ></div>
+              </div>
+              <div class="name">
+                <a href="#">
+                  Responsible AI Podcast with Scott Zoldi — “It’s time for AI to
+                  grow up”
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="recent-image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/pexels-photo-2599244.jpeg);
+                  "
+                ></div>
+              </div>
+              <div class="name">
+                <a href="#">
+                  Responsible AI Podcast with Scott Zoldi — “It’s time for AI to
+                  grow up”
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer-start -->
+    <div class="footer">
+      <div class="wrapper">
+        <div class="logo-footer">
+          <img src="./images/logo/output-onlinepngtools.png" alt="" />
+        </div>
+
+        <div class="list">
+          <div class="item">
+            <ul>
+              <li class="heading">Solutions</li>
+              <li>Explainable AI</li>
+              <li>XAI Build vs Buy</li>
+              <li>ML Monitoring</li>
+              <li>MLM Build vs Buy</li>
+              <li>ML Ops</li>
+              <li>Fiddler + SageMaker</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <ul>
+              <li class="heading">Use Cases</li>
+              <li>AI Governance</li>
+              <li>Fraud</li>
+              <li>Churn detection</li>
+              <li>Underwriting</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <ul>
+              <li class="heading">Resources</li>
+              <li>Resource Hub</li>
+              <li>Research</li>
+              <li>Videos</li>
+              <li>Podcasts</li>
+              <li>Reports</li>
+              <li>Blog</li>
+              <li>Subscribe</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <ul>
+              <li class="heading">Company</li>
+              <li>Customers</li>
+              <li>About Us</li>
+              <li>Careers <span>We are hiring!</span></li>
+              <li>Events</li>
+              <li>Media</li>
+              <li>Partners</li>
+              <li>Contact Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Use</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <ul>
+              <li class="heading">Subscribe</li>
+            </ul>
+            <form action="">
+              <input type="text" name="" id="" placeholder="Name" />
+              <input type="email" name="" id="" placeholder="Company Email" />
+              <input type="submit" class="button" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-end -->
+
+    <!-- scripts -->
+    <script src="./js/others/swiper.min.js"></script>
+    <script src="./js/whatWeDo.js"></script>
+
+    <script></script>
+  </body>
+</html>
