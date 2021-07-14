@@ -1607,6 +1607,10 @@ header {
   }
 }
 
+/************************************************
+*              defense-solutions                *
+************************************************/
+
 .defense-solutions {
   padding: 4rem 0 2rem;
 
@@ -1641,6 +1645,10 @@ header {
     }
   }
 }
+
+/************************************************
+*                    sensor                     *
+************************************************/
 
 .sensor {
   padding: 2rem 0;
@@ -1700,6 +1708,10 @@ header {
   }
 }
 
+/************************************************
+*                   learning                    *
+************************************************/
+
 .learning {
   padding: 6rem 0 3rem;
   background-color: $bgColor;
@@ -1746,6 +1758,10 @@ header {
     }
   }
 }
+
+/************************************************
+*                   courses                     *
+************************************************/
 
 .courses {
   padding: 4rem 0 0;
@@ -1834,6 +1850,10 @@ header {
   }
 }
 
+/************************************************
+*               dont-waste-time                 *
+************************************************/
+
 .dont-waste-time {
   padding: 4rem 0;
 
@@ -1877,6 +1897,10 @@ header {
     }
   }
 }
+
+/************************************************
+*                    intern                     *
+************************************************/
 
 .intern {
   .list {
@@ -1946,6 +1970,10 @@ header {
   }
 }
 
+/************************************************
+*              ready-to-get-started             *
+************************************************/
+
 .ready-to-get-started {
   height: 400px;
   @include image();
@@ -1974,3 +2002,109 @@ header {
     z-index: 1;
   }
 }
+
+/************************************************
+*               learn-with-dest                 *
+************************************************/
+
+.learn-with-dest {
+  padding: 2rem 0 0;
+  .list {
+    margin: 2rem 0;
+
+    .swiper-slide {
+      height: 450px;
+      @include center();
+      padding: 1rem 0 1rem 1rem;
+
+      &:nth-child(1),
+      &:nth-child(5) {
+        .card {
+          border-top: 4px solid #bbb7ff;
+          .image {
+            border-bottom: 4px solid #bbb7ff;
+          }
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(6) {
+        .card {
+          border-top: 4px solid #3be5dd;
+          .image {
+            border-bottom: 4px solid #3be5dd;
+          }
+        }
+      }
+
+      &:nth-child(3),
+      &:nth-child(7) {
+        .card {
+          border-top: 4px solid #99b7ff;
+          .image {
+            border-bottom: 4px solid #99b7ff;
+          }
+        }
+      }
+
+      &:nth-child(4),
+      &:nth-child(8) {
+        .card {
+          border-top: 4px solid #fffbae;
+          .image {
+            border-bottom: 4px solid #fffbae;
+          }
+        }
+      }
+    }
+
+    .card {
+      position: relative;
+      border-top: 4px solid #bbb7ff;
+      padding-top: 4rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      box-shadow: 0 0 14px rgba($dark, 0.2);
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 14px rgba($dark, 0.2);
+      }
+
+      .image {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        @include image();
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid $light;
+        border-bottom: 4px solid #bbb7ff;
+        box-shadow: 0 0 25px rgba($dark, 0.2);
+      }
+
+      .details {
+        padding: 1rem;
+
+        .name {
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        h6 {
+          margin: 0.5rem 0 1rem;
+          font-size: 15px;
+          color: #6d6d6d;
+          letter-spacing: 0.4px;
+        }
+      }
+    }
+  }
+}
+
+/************************************************
+*                 job-details                   *
+************************************************/

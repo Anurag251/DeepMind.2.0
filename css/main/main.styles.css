@@ -2067,6 +2067,9 @@ header.sticky .nav ul a li {
   font-weight: 500;
 }
 
+/************************************************
+*              defense-solutions                *
+************************************************/
 .defense-solutions {
   padding: 4rem 0 2rem;
 }
@@ -2129,6 +2132,9 @@ header.sticky .nav ul a li {
   width: 80%;
 }
 
+/************************************************
+*                    sensor                     *
+************************************************/
 .sensor {
   padding: 2rem 0;
 }
@@ -2199,6 +2205,9 @@ header.sticky .nav ul a li {
   color: #3b1485;
 }
 
+/************************************************
+*                   learning                    *
+************************************************/
 .learning {
   padding: 6rem 0 3rem;
   background-color: #3b1485;
@@ -2265,6 +2274,9 @@ header.sticky .nav ul a li {
   border-bottom-left-radius: 100px;
 }
 
+/************************************************
+*                   courses                     *
+************************************************/
 .courses {
   padding: 4rem 0 0;
 }
@@ -2388,6 +2400,9 @@ header.sticky .nav ul a li {
           box-shadow: 0 0 10px rgba(9, 106, 224, 0.9);
 }
 
+/************************************************
+*               dont-waste-time                 *
+************************************************/
 .dont-waste-time {
   padding: 4rem 0;
 }
@@ -2447,6 +2462,9 @@ header.sticky .nav ul a li {
   font-size: 14px;
 }
 
+/************************************************
+*                    intern                     *
+************************************************/
 .intern .list {
   display: -ms-grid;
   display: grid;
@@ -2546,6 +2564,9 @@ header.sticky .nav ul a li {
           box-shadow: 0 0 10px rgba(9, 106, 224, 0.9);
 }
 
+/************************************************
+*              ready-to-get-started             *
+************************************************/
 .ready-to-get-started {
   height: 400px;
   background-position: center;
@@ -2606,4 +2627,118 @@ header.sticky .nav ul a li {
   -webkit-box-shadow: 0 0 10px rgba(9, 106, 224, 0.9);
           box-shadow: 0 0 10px rgba(9, 106, 224, 0.9);
 }
+
+/************************************************
+*               learn-with-dest                 *
+************************************************/
+.learn-with-dest {
+  padding: 2rem 0 0;
+}
+
+.learn-with-dest .list {
+  margin: 2rem 0;
+}
+
+.learn-with-dest .list .swiper-slide {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(1) .card, .learn-with-dest .list .swiper-slide:nth-child(5) .card {
+  border-top: 4px solid #bbb7ff;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(1) .card .image, .learn-with-dest .list .swiper-slide:nth-child(5) .card .image {
+  border-bottom: 4px solid #bbb7ff;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(2) .card, .learn-with-dest .list .swiper-slide:nth-child(6) .card {
+  border-top: 4px solid #3be5dd;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(2) .card .image, .learn-with-dest .list .swiper-slide:nth-child(6) .card .image {
+  border-bottom: 4px solid #3be5dd;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(3) .card, .learn-with-dest .list .swiper-slide:nth-child(7) .card {
+  border-top: 4px solid #99b7ff;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(3) .card .image, .learn-with-dest .list .swiper-slide:nth-child(7) .card .image {
+  border-bottom: 4px solid #99b7ff;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(4) .card, .learn-with-dest .list .swiper-slide:nth-child(8) .card {
+  border-top: 4px solid #fffbae;
+}
+
+.learn-with-dest .list .swiper-slide:nth-child(4) .card .image, .learn-with-dest .list .swiper-slide:nth-child(8) .card .image {
+  border-bottom: 4px solid #fffbae;
+}
+
+.learn-with-dest .list .card {
+  position: relative;
+  border-top: 4px solid #bbb7ff;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.learn-with-dest .list .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+.learn-with-dest .list .card .image {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 4px solid #ffffff;
+  border-bottom: 4px solid #bbb7ff;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.learn-with-dest .list .card .details {
+  padding: 1rem;
+}
+
+.learn-with-dest .list .card .details .name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.learn-with-dest .list .card .details h6 {
+  margin: 0.5rem 0 1rem;
+  font-size: 15px;
+  color: #6d6d6d;
+  letter-spacing: 0.4px;
+}
+
+/************************************************
+*                 job-details                   *
+************************************************/
 /*# sourceMappingURL=main.styles.css.map */

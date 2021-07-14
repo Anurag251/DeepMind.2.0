@@ -336,7 +336,7 @@
       <div class="wrapper">
         <div class="title">Don't waste your valuable time or money</div>
         <p class="desc">
-          Only Udacity has all the critical factors to deliver real results
+          Only Deep Mind has all the critical factors to deliver real results
         </p>
 
         <div class="list">
@@ -387,6 +387,155 @@
       </div>
     </div>
     <!-- dont-waste-time-end -->
+
+    <!-- learn-with-dest-start -->
+    <div class="learn-with-dest">
+      <div class="wrapper">
+        <div class="title">Learn With The Best</div>
+
+        <div class="list">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/profile/profile1.jpeg);
+                    "
+                  ></div>
+                  <div class="details">
+                    <div class="name">Josh Bernhard</div>
+                    <h6>DATA SCIENTIST AT NERD WALLET</h6>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, incidunt,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/profile/profile2.jpeg);
+                    "
+                  ></div>
+                  <div class="details">
+                    <div class="name">Josh Bernhard</div>
+                    <h6>DATA SCIENTIST AT NERD WALLET</h6>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, incidunt,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/profile/profile3.jpeg);
+                    "
+                  ></div>
+                  <div class="details">
+                    <div class="name">Josh Bernhard</div>
+                    <h6>DATA SCIENTIST AT NERD WALLET</h6>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, incidunt,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/profile/profile4.jpeg);
+                    "
+                  ></div>
+                  <div class="details">
+                    <div class="name">Josh Bernhard</div>
+                    <h6>DATA SCIENTIST AT NERD WALLET</h6>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, incidunt,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/profile/profile1.jpeg);
+                    "
+                  ></div>
+                  <div class="details">
+                    <div class="name">Josh Bernhard</div>
+                    <h6>DATA SCIENTIST AT NERD WALLET</h6>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, incidunt,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/profile/profile2.jpeg);
+                    "
+                  ></div>
+                  <div class="details">
+                    <div class="name">Josh Bernhard</div>
+                    <h6>DATA SCIENTIST AT NERD WALLET</h6>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, incidunt,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/profile/profile3.jpeg);
+                    "
+                  ></div>
+                  <div class="details">
+                    <div class="name">Josh Bernhard</div>
+                    <h6>DATA SCIENTIST AT NERD WALLET</h6>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quidem, incidunt,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- learn-with-dest-end -->
 
     <!-- footer-start -->
     <div class="footer">
@@ -489,6 +638,28 @@
 
       // Specialty
       var swiper = new Swiper('.Specialty .mySwiper', {
+        slidesPerView: 1,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
+
+      // learn-with-dest
+      var swiper = new Swiper('.learn-with-dest .mySwiper', {
         slidesPerView: 1,
 
         navigation: {
