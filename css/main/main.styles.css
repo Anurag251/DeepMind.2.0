@@ -12,6 +12,19 @@
   font-family: Manrope, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+:root::-webkit-scrollbar-track {
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #096ae0;
+  border-radius: 10px;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -242,6 +255,7 @@ header.sticky .nav ul a li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background-color: #110f2e;
 }
 
 .banner .slider .swiper-slide .detais .banner-title {
@@ -285,6 +299,7 @@ header.sticky .nav ul a li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #110f2e;
 }
 
 .banner .slider .swiper-slide .video {
@@ -2243,6 +2258,18 @@ header.sticky .nav ul a li {
 
 .learning .wrapper .details .button-group {
   margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .learning .wrapper .details .button-group .button {
@@ -2739,6 +2766,127 @@ header.sticky .nav ul a li {
 }
 
 /************************************************
-*                 job-details                   *
+*                    contact                    *
 ************************************************/
+.contact {
+  height: 800px;
+  position: relative;
+}
+
+.contact .map {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.contact .map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.contact .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact .wrapper .title {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.contact .wrapper .form {
+  background-color: rgba(59, 20, 133, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.contact .wrapper .form form fieldset {
+  border: 1px solid #ebebeb;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .wrapper .form form fieldset legend {
+  float: none;
+  width: auto;
+  margin: 0 5px;
+  padding: 0 10px;
+  color: #e6e6e6;
+  font-size: 16px;
+}
+
+.contact .wrapper .form form fieldset input,
+.contact .wrapper .form form fieldset textarea {
+  padding: 0.6rem;
+  width: 100%;
+  color: #ffffff;
+}
+
+.contact .wrapper .form form fieldset input::-webkit-input-placeholder,
+.contact .wrapper .form form fieldset textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .wrapper .form form fieldset input:-ms-input-placeholder,
+.contact .wrapper .form form fieldset textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .wrapper .form form fieldset input::-ms-input-placeholder,
+.contact .wrapper .form form fieldset textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .wrapper .form form fieldset input::placeholder,
+.contact .wrapper .form form fieldset textarea::placeholder {
+  color: #ffffff;
+}
+
+.contact .wrapper .form form fieldset textarea {
+  max-height: 200px;
+  height: 100%;
+  resize: none;
+}
+
+.contact .wrapper .form form .button {
+  padding: 0.6rem 2rem;
+  background-color: rgba(9, 106, 224, 0.8);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.contact .wrapper .form form .button:hover {
+  color: #ffffff;
+  background-color: #096ae0;
+  -webkit-box-shadow: 0 0 10px rgba(9, 106, 224, 0.9);
+          box-shadow: 0 0 10px rgba(9, 106, 224, 0.9);
+}
 /*# sourceMappingURL=main.styles.css.map */

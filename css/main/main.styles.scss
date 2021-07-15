@@ -78,6 +78,19 @@ $dark: #000000;
     transform 0.45s cubic-bezier(0, 0, 0, 1);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+:root::-webkit-scrollbar-track {
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $main;
+  border-radius: 10px;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -250,6 +263,7 @@ header {
         @include center();
         flex-direction: column;
         align-items: flex-start;
+        background-color: #110f2e;
 
         .banner-title {
           font-size: 40px;
@@ -276,6 +290,7 @@ header {
         height: 500px;
         width: 100%;
         @include image();
+        background-color: #110f2e;
       }
 
       .video {
@@ -1742,6 +1757,8 @@ header {
 
       .button-group {
         margin: 2rem 0;
+        @include center();
+        justify-content: flex-start;
 
         .button {
           @include button();
@@ -2106,5 +2123,80 @@ header {
 }
 
 /************************************************
-*                 job-details                   *
+*                    contact                    *
 ************************************************/
+
+.contact {
+  height: 800px;
+  position: relative;
+
+  .map {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .wrapper {
+    @include black();
+    @include center();
+    justify-content: flex-end;
+
+    .title {
+      color: $light;
+      margin-bottom: 2rem;
+    }
+
+    .form {
+      background-color: rgba($bgColor, 0.8);
+      backdrop-filter: blur(5px);
+      padding: 2rem;
+      max-width: 500px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+
+      form {
+        fieldset {
+          border: 1px solid rgb(235, 235, 235);
+          padding: 0 2rem;
+          margin-bottom: 1rem;
+          legend {
+            float: none;
+            width: auto;
+            margin: 0 5px;
+            padding: 0 10px;
+            color: rgb(230, 230, 230);
+            font-size: 16px;
+          }
+
+          input,
+          textarea {
+            padding: 0.6rem;
+            width: 100%;
+            color: $light;
+
+            &::placeholder {
+              color: $light;
+            }
+          }
+
+          textarea {
+            max-height: 200px;
+            height: 100%;
+            resize: none;
+          }
+        }
+        .button {
+          @include button();
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
